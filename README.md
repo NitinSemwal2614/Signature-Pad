@@ -15,19 +15,8 @@ Save & Download: Users can save their signature as an image file and download it
 To use this application locally, follow these steps:
 
 1. Clone this repository to your local machine:
-
-bash
-Copy code
-git clone <repository-url>
-
 2. Navigate to the project directory:
-
-bash
-Copy code
-cd signature-pad-web-app
-
 3. Open the index.html file in your web browser.
-
 4. Start drawing your signature on the canvas!
 
 # Usage
