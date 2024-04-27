@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Pad </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="canvas-container">
+            <canvas id="myCanvas" width="1000" height="500"></canvas>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="colorPicker">Set Text Color</label>
+                <input type="color" id="colorPicker" value="#000000">
+            </div>
+            <div class="control-group">
+                <label for="canvasColor">Set Background Color</label>
+                <input type="color" id="canvasColor" value="#ffffff">
+            </div>
+            <div class="control-group">
+                <label for="lineWidthPicker">Set Font Size</label>
+                <select id="lineWidthPicker">
+                    <option value="1">1px</option>
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                </select>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="fileName" class="fileName">Enter File Name</label>
+                <input type="text" id="fileName" placeholder="Enter file name">
+            </div>
+            <button class="btn btn-info" id="toggleDarkModeButton">Dark Mode</button>
+            <button class="btn btn-danger" id="clearButton">Clear</button>
+            <button class="btn btn-success" id="saveButton">Save & Download</button>
+        </div>
+    </div>
+    <!--  Link Script.js -->
+    <script src="Script.js"></script>
+</body>
+
+</html>

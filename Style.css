@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.419);
+}
+
+.canvas-container {
+    position: relative;
+    margin-top: 20px;
+    border: 2px solid #343a40;
+    border-radius: 8px;
+    display: block;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-group {
+    flex-grow: 1;
+    margin-right: 10px;
+    margin-bottom: 10px; 
+}
+
+.control-group:last-child {
+    margin-right: 0;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.control-group select,
+.control-group input[type="color"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+}
+
+.btn {
+    padding: 8px 20px;
+    font-size: 16px;
+    margin-right: 20px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+.fileName {
+    margin-right: 10px;
+  }
+
+#fileName {
+    margin-right: 10px;
+    height: 15px;
+  }
+/* Light Mode */
+.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.light-mode .container {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark-mode .container  .control-group{
+    background-color: #ffffff2f;
+    color: #000000;
+}
+
+
+
+
+/* style.css */
+
+/* Other styles remain unchanged */
+
+@media screen and (max-width: 600px) {
+    .btn {
+        padding: 8px 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+    
+    .container {
+        margin: 20px 5px; /* Further reduced margin for smaller screens */
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .btn {
+        padding: 5px 8px; /* Further adjust padding for very small screens */
+        font-size: 12px; /* Further adjust font size for very small screens */
+        margin-right: 5px; /* Further adjust margin for very small screens */
+    }
+    
+    .container {
+        margin: 10px 2px; /* Adjusted margin for very small screens */
+        padding: 10px; /* Adjusted padding for very small screens */
+    }
+}
